@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>หารถที่จอด</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <div class="pbadge">P</div>
+      <div><b>หารถที่จอด</b><span>ลานจอดรถอาคาร ตัวอย่าง</span></div>
+    </div>
+    <h1>รถของคุณจอดอยู่ที่ไหน</h1>
+    <p class="lead">กรอกป้ายทะเบียน หรือเลขท้ายอย่างน้อย 3 ตัว</p>
+    <div class="plate">
+      <input id="q" placeholder="กท 1234" aria-label="ป้ายทะเบียน" autocomplete="off">
+      <button class="go" id="searchBtn">ค้นหา</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div id="banner" class="card banner-err" role="alert" hidden></div>
+    <p class="hint" id="stamp" aria-live="polite">กำลังโหลดข้อมูล…</p>
+    <div id="out"></div>
+  </div>
+</main>
+
+<a class="edge" href="admin.html">แอดมิน</a>
+
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/api.js"></script>
+<script src="js/user.js"></script>
+</body>
+</html>
